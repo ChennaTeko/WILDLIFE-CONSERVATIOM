@@ -1,0 +1,128 @@
+/* ===== Base / Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f7f3;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #2e5339;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Main / Video Section ===== */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.video-section {
+  max-width: 800px;
+  width: 100%;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #000;
+  outline: none;
+}
+
+/* Visible focus outline for keyboard accessibility */
+video:focus,
+button:focus {
+  outline: 3px solid #f4b400;
+  outline-offset: 2px;
+}
+
+.description {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #333333;
+  text-align: left;
+}
+
+/* ===== Button ===== */
+button#toggleBtn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2e5339;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button#toggleBtn:hover {
+  background-color: #244029;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2e5339;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* ===== Accessibility: Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  button#toggleBtn {
+    transition: none;
+  }
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .video-section {
+    padding: 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  button#toggleBtn {
+    width: 100%;
+    padding: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
