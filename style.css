@@ -1,0 +1,61 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: darkgreen;
+    outline: 2px solid black;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
